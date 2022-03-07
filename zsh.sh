@@ -1,4 +1,12 @@
 #Before configs clone the P10K
+
+##ADD THIS TO BASHRC IF IT DOES NOT CHANGE TO ZSH with the <chsh -s $(which zsh) username> command
+#if [ "$SHELL" != "/usr/bin/zsh" ]
+#then
+#    export SHELL="/usr/bin/zsh"
+#    exec /usr/bin/zsh
+#fi
+
 #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
