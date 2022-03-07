@@ -7,11 +7,14 @@
 #    exec /usr/bin/zsh
 #fi
 
+#1. Clone the repository:
 #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k 
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+#2 Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
 
 #Add here your $USER_NAME
 export ZSH="/home/{$USER_NAME}/.oh-my-zsh"
