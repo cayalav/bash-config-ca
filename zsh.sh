@@ -21,6 +21,7 @@ export ZSH="/home/{$USER_NAME}/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 plugins=(git zsh-autosuggestions z kubectl)
 
 ZSH_DISABLE_COMPFIX=true
