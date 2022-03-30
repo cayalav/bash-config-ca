@@ -35,3 +35,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+#To execute git ALL command execute:
+#git config --global alias.all '!f() { ls -R -d */.git | xargs -I{} bash -c "echo {} && git -C {}/../ $1"; }; f'
