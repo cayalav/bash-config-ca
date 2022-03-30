@@ -36,5 +36,8 @@ source $ZSH/oh-my-zsh.sh
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
+#Install Path of Geodesic
+export INSTALL_PATH=~/bin/
+
 #To execute git ALL command execute:
 #git config --global alias.all '!f() { ls -R -d */.git | xargs -I{} bash -c "echo {} && git -C {}/../ $1"; }; f'
